@@ -93,11 +93,12 @@ The collection contains:
 - `POST /products/:id/sell` - Sell a product
 
 ---
-🧪 Testing CRUD in Postman – With Examples
-🔹 1. Add a Product
-Method: POST
-URL: http://localhost:5000/products
-Body: raw → JSON
+### 🧪 Testing CRUD in Postman – With Examples
+### 🔹 1. Add a Product
+#### Method: POST
+#### URL: http://localhost:5000/products
+#### Body: raw → JSON
+```
 {
   "name": "Laptop",
   "description": "High-performance laptop",
@@ -105,11 +106,13 @@ Body: raw → JSON
   "price": 1200,
   "quantity": 5
 }
-🔹 2. Get All Products
-Method: GET
-URL: http://localhost:5000/products
+```
+### 🔹 2. Get All Products
+### Method: GET
+#### URL: http://localhost:5000/products
 
-Response Example:
+#### Response Example:
+```
 [
   {
     "_id": "661f1b4c3f276cd1e09361d2",
@@ -128,11 +131,12 @@ Response Example:
     "quantity": 10
   }
 ]
-🔹 3. Update a Product
-Method: PUT
-URL: http://localhost:5000/products/661f1b4c3f276cd1e09361d2
+```
+### 🔹 3. Update a Product
+### Method: PUT
+#### URL: http://localhost:5000/products/661f1b4c3f276cd1e09361d2
 (Replace with your actual product ID)
-
+```
 Body:
 {
   "name": "Laptop Pro",
@@ -141,24 +145,28 @@ Body:
   "price": 1400,
   "quantity": 3
 }
-🔹 4. Delete a Product
-Method: DELETE
-URL: http://localhost:5000/products/661f1b4c3f276cd1e09361d2
+```
+### 🔹 4. Delete a Product
+### Method: DELETE
+#### URL: http://localhost:5000/products/661f1b4c3f276cd1e09361d2
 
-Response Example:
+#### Response Example:
+```
 {
   "message": "Product deleted successfully"
 }
-🔹 5. Sell a Product
-Method: POST
-URL: http://localhost:5000/products/661f1b963f276cd1e09361d4/sell
+```
+### 🔹 5. Sell a Product
+### Method: POST
+#### URL: http://localhost:5000/products/661f1b963f276cd1e09361d4/sell
 
-Response Example:
+#### Response Example:
+```
 {
   "message": "Product sold successfully",
   "remainingQuantity": 9
 }
-
+```
 
 
 ## 📌 Notes
