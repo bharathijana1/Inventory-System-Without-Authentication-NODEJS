@@ -68,9 +68,8 @@ POST /products/:id/sell
 git clone https://github.com/bharathijana1/Inventory-System-Without-Authentication-NODEJS.git
 cd Inventory-System-Without-Authentication-NODEJS
 code .
-npm install
 cd backend
-
+npm install
 npm run dev
 ```
 
