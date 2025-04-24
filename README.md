@@ -65,11 +65,12 @@ POST /products/:id/sell
 ## 🛠️ Installation & Running
 
 ```bash
-git clone https://github.com/your-username/Inventory-System-Without-Authentication-NODEJS.git
+git clone https://github.com/bharathijana1/Inventory-System-Without-Authentication-NODEJS.git
 cd Inventory-System-Without-Authentication-NODEJS
 code .
-cd backend
 npm install
+cd backend
+
 npm run dev
 ```
 
@@ -112,7 +113,7 @@ The collection contains:
 #### URL: http://localhost:5000/products
 
 #### Response Example:
----
+````
 [
   {
     "_id": "661f1b4c3f276cd1e09361d2",
@@ -131,7 +132,7 @@ The collection contains:
     "quantity": 10
   }
 ]
----
+````
 ### 🔹 3. Update a Product
 ### Method: PUT
 #### URL: http://localhost:5000/products/661f1b4c3f276cd1e09361d2
@@ -151,22 +152,22 @@ Body:
 #### URL: http://localhost:5000/products/661f1b4c3f276cd1e09361d2
 
 #### Response Example:
----
+```
 {
   "message": "Product deleted successfully"
 }
----
+```
 ### 🔹 5. Sell a Product
 ### Method: POST
 #### URL: http://localhost:5000/products/661f1b963f276cd1e09361d4/sell
 
 #### Response Example:
----
+```
 {
   "message": "Product sold successfully",
   "remainingQuantity": 9
 }
----
+```
 
 
 ## 📌 Notes
